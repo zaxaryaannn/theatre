@@ -1,0 +1,110 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  scroll-behavior: smooth;
+  scroll-padding-top: 2rem;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-size: 62.5%;
+}
+@media only screen and (max-width: 800px) {
+  html {
+    font-size: 57%;
+  }
+}
+
+html::-webkit-scrollbar{
+  width: 0.4rem;
+  background: transparent;
+}
+html::-webkit-scrollbar-thumb{
+  background: rgba(209, 169, 84, 1);
+}
+
+body {
+    background-color: rgba(51, 51, 51, 1);
+    color: #fff;
+}
+@media only screen and (max-width: 1000px) {
+  body {
+    padding: 0;
+  }
+}
+::selection{
+  background: rgba(209, 169, 84, 1);
+  color: #fff;
+}
+a{
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+img{
+  width: 100%;
+}
+
+.main{
+  display: flex;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(img/about_baner.png) center center;
+  background-size: cover;
+  min-height: 525px;
+  max-height: 495px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.main h1{
+  font-size: 7rem;
+  font-weight: 600;
+  line-height: .5;
+  letter-spacing: 1.5rem;
+}
+
+@media (max-width: 780px){
+  .main h1{
+    font-size: 6rem;
+  }
+}  
+
+@media (max-width: 500px){
+  .main h1{
+    font-size: 4.2rem;
+  }
+}  
+
+.gallery{
+  min-height: 100vh;
+}
+
+.gallery .image-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.gallery .image-container img{
+  height:250px;
+  width: 350px;
+  object-fit: cover;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 3px 5px rgba(0,0,0,.3);
+  border-radius: 8px;
+  margin: 20px;
+}
+
+
+.gallery .image-container img:hover{
+  transform: scale(1.1);
+  transition: 0.7s ease;
+}

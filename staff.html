@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Աշխատակազմ</title>
+    <link rel="shortcut icon" type="image" href="img/logo.png">
+
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="staff.css">
+    <link rel="stylesheet" href="footer.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <nav>
+        <div class="navbar">
+          <i class='bx bx-menu'></i>
+          <div class="logo"><a href="index.html"><img src="img/logo.png" alt=""></a></div>
+          <div class="nav-links">
+            <div class="sidebar-logo">
+              <span class="logo-name"><a href="index.html"><img src="img/logo.png" alt=""></a></span>
+              <i class='bx bx-x' ></i>
+            </div>
+            <ul class="links">
+              <li>
+                <a href="index.html" class="active">Գլխավոր</a>
+                <i class='bx bxs-chevron-down htmlcss-arrow arrow active '></i>
+                <ul class="htmlCss-sub-menu sub-menu">
+                  <li><a href="index.html#about">Մեր մասին</a></li>
+                  <li><a href="index.html#contact">Կապ</a></li>
+                  <li><a href="#staf">Աշխատակազմ</a></li>
+                </ul>
+              </li>
+              <li><a href="presentation.html">Ներկայացումներ</a></li>
+              <li><a href="actor.html">Դերասաններ</a></li>
+              <li><a href="gallery.html">Նկարներ</a></li>
+            </ul>
+          </div>
+          <div class="number">
+            <span>+374-00-00-00-00</span>
+          </div>
+        </div>
+    </nav>
+
+    <section class="main">
+        <div class="main-container">
+           <h1>Աշխատակազմ</h1>
+        </div>
+    </section>
+
+    <div class="container-box">
+      <!-- Staff Card Start -->
+      <div class="card">
+        <div class="lines"></div>
+        <div class="imgBx">
+          <img src="img/actor-7.jpg">
+        </div>
+        <div class="content">
+          <div class="box-about">
+            <h2>Անուն Ազգանուն</h2>
+            <h3>Մասնագիտություն</h3>
+          </div>
+        </div>
+      </div>
+      <!-- Staff Card End -->
+      <!-- Staff Card Start -->
+      <div class="card">
+        <div class="lines"></div>
+        <div class="imgBx">
+          <img src="img/actor-1.jpg">
+        </div>
+        <div class="content">
+          <div class="box-about">
+            <h2>Անուն Ազգանուն</h2>
+            <h3>Մասնագիտություն</h3>
+          </div>
+        </div>
+      </div>
+      <!-- Staff Card End -->
+      <!-- Staff Card Start -->
+      <div class="card">
+        <div class="lines"></div>
+        <div class="imgBx">
+          <img src="img/actor-2.jpg">
+        </div>
+        <div class="content">
+          <div class="box-about">
+            <h2>Անուն Ազգանուն</h2>
+            <h3>Մասնագիտություն</h3>
+          </div>
+        </div>
+      </div>
+      <!-- Staff Card End -->
+      <!-- Staff Card Start -->
+      <div class="card">
+        <div class="lines"></div>
+        <div class="imgBx">
+          <img src="img/actor-3.jpg">
+        </div>
+        <div class="content">
+          <div class="box-about">
+            <h2>Անուն Ազգանուն</h2>
+            <h3>Մասնագիտություն</h3>
+          </div>
+        </div>
+      </div>
+      <!-- Staff Card End -->
+      <!-- Staff Card Start -->
+      <div class="card">
+        <div class="lines"></div>
+        <div class="imgBx">
+          <img src="img/actor-6.jpg">
+        </div>
+        <div class="content">
+          <div class="box-about">
+            <h2>Անուն Ազգանուն</h2>
+            <h3>Մասնագիտություն</h3>
+          </div>
+        </div>
+      </div>
+      <!-- Staff Card End -->
+      <!-- Staff Card Start -->
+      <div class="card">
+        <div class="lines"></div>
+        <div class="imgBx">
+          <img src="img/actor-7.jpg">
+        </div>
+        <div class="content">
+          <div class="box-about">
+            <h2>Անուն Ազգանուն</h2>
+            <h3>Մասնագիտություն</h3>
+          </div>
+        </div>
+      </div>
+      <!-- Staff Card End -->
+    </div>
+
+    <footer>
+        <div class="footer-container">
+         <div class="social-icons">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-instagram' ></i></a>
+            <a href="#"><i class='bx bxl-youtube' ></i></a>
+          </div>
+          <div class="footer-nav">
+            <ul>
+              <li><a href="index.html">Գլխավոր</a></li>
+              <li><a href="presentation.html">Ներկայացումներ</a></li>
+              <li><a href="actor.html">Դերասաններ</a></li>
+              <li><a href="gallery.html">Նկարներ</a></li>
+              <li><a href="index.html#contact">Կապ</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>Copyright &copy;2023 | All Rights Reserved </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="jQuery.js"></script>
+    <script>
+      jQuery(document).ready(function ($) {
+        $(".slider-img").on("click", function () {
+          $(".slider-img").removeClass("active");
+          $(this).addClass("active");
+        });
+      });
+    </script>
+</body>
+</html>
